@@ -2,30 +2,21 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Sree Vardhan Sai Kurra | Python Full Stack Developer</title>
 
     <!-- Bootstrap CSS -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Bootstrap Icons -->
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <style>
-
         /* =========================
            GLOBAL
         ========================= */
-
         html {
             scroll-behavior: smooth;
         }
@@ -53,11 +44,9 @@
             color: #6c757d;
         }
 
-
         /* =========================
            NAVBAR
         ========================= */
-
         .navbar {
             background-color: #111827;
         }
@@ -76,22 +65,14 @@
             color: #0d6efd;
         }
 
-
         /* =========================
            HOME
         ========================= */
-
         #home {
             min-height: 100vh;
             display: flex;
             align-items: center;
-
-            background: linear-gradient(
-                135deg,
-                #111827,
-                #1e3a8a
-            );
-
+            background: linear-gradient(135deg, #111827, #1e3a8a);
             color: white;
             padding-top: 100px;
         }
@@ -124,48 +105,35 @@
             padding: 12px 25px;
         }
 
-
         /* =========================
            PROFILE PHOTO
         ========================= */
-
         .profile-circle {
             width: 240px;
             height: 310px;
-
             border-radius: 12px;
             overflow: hidden;
-
             margin: auto;
-
             border: 3px solid rgba(255,255,255,0.9);
-
-            box-shadow:
-                0 0 30px rgba(255,255,255,0.25);
+            box-shadow: 0 0 30px rgba(255,255,255,0.25);
         }
 
         .profile-circle img {
             width: 100%;
             height: 100%;
-
             object-fit: cover;
             object-position: center top;
             display: block;
         }
 
-
         /* =========================
            ABOUT
         ========================= */
-
         .about-card {
             background: white;
             padding: 30px;
-
             border-radius: 15px;
-
-            box-shadow:
-                0 5px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
         }
 
         .about-info {
@@ -181,29 +149,20 @@
             margin-right: 10px;
         }
 
-
         /* =========================
            SKILLS
         ========================= */
-
         #skills {
             background-color: #eef2ff;
         }
 
         .skill-card {
             background-color: white;
-
             padding: 30px;
-
             border-radius: 15px;
-
             height: 100%;
-
             text-align: center;
-
-            box-shadow:
-                0 5px 20px rgba(0,0,0,0.07);
-
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
             transition: 0.3s;
         }
 
@@ -224,36 +183,23 @@
 
         .skill-badge {
             display: inline-block;
-
             background-color: #e7f1ff;
-
             color: #0d6efd;
-
             padding: 8px 14px;
-
             margin: 5px;
-
             border-radius: 20px;
-
             font-size: 14px;
         }
-
 
         /* =========================
            EXPERIENCE
         ========================= */
-
         .experience-card {
             background: white;
-
             padding: 30px;
-
             border-left: 5px solid #0d6efd;
-
             border-radius: 10px;
-
-            box-shadow:
-                0 5px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
         }
 
         .experience-card h4 {
@@ -265,24 +211,18 @@
             font-weight: 600;
         }
 
-
         /* =========================
-           PROJECTS
+           PROJECTS (UPDATED)
         ========================= */
-
         .project-card {
             background: white;
-
             border-radius: 15px;
-
             overflow: hidden;
-
             height: 100%;
-
-            box-shadow:
-                0 5px 20px rgba(0,0,0,0.08);
-
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
             transition: 0.3s;
+            display: flex;
+            flex-direction: column;
         }
 
         .project-card:hover {
@@ -291,18 +231,32 @@
 
         .project-header {
             background: #1e3a8a;
-
             color: white;
-
             padding: 30px;
+            min-height: 220px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
         }
 
         .project-header i {
             font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .project-header h3 {
+            font-weight: 700;
+            font-size: 1.45rem;
+            line-height: 1.4;
+            margin-top: auto;
+            margin-bottom: 0;
         }
 
         .project-body {
             padding: 30px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
         }
 
         .project-body h4 {
@@ -311,64 +265,46 @@
 
         .technology {
             display: inline-block;
-
             background: #e7f1ff;
-
             color: #0d6efd;
-
             padding: 6px 10px;
-
             border-radius: 15px;
-
             font-size: 13px;
-
             margin: 3px;
         }
 
         .github-btn {
-            margin-top: 20px;
+            margin-top: auto;
+            padding-top: 20px;
         }
-
 
         /* =========================
            EDUCATION
         ========================= */
-
         #education {
             background-color: #eef2ff;
         }
 
         .education-card {
             background-color: white;
-
             padding: 30px;
-
             border-radius: 15px;
-
-            box-shadow:
-                0 5px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
         }
 
         .education-card h4 {
             font-weight: 700;
         }
 
-
         /* =========================
            CERTIFICATION
         ========================= */
-
         .certificate-card {
             background: white;
-
             padding: 35px;
-
             border-radius: 15px;
-
             text-align: center;
-
-            box-shadow:
-                0 5px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
         }
 
         .certificate-card i {
@@ -381,40 +317,30 @@
             font-weight: 700;
         }
 
-
         /* =========================
            CONTACT
         ========================= */
-
         .contact-card {
             background: white;
-
             padding: 35px;
-
             border-radius: 15px;
-
-            box-shadow:
-                0 5px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
         }
 
         .contact-item {
             display: flex;
             align-items: center;
-
             margin-bottom: 25px;
         }
 
         .contact-item i {
             font-size: 30px;
-
             color: #0d6efd;
-
             margin-right: 20px;
         }
 
         .contact-item h6 {
             margin-bottom: 5px;
-
             font-weight: 700;
         }
 
@@ -422,28 +348,20 @@
             text-decoration: none;
         }
 
-
         /* =========================
            FOOTER
         ========================= */
-
         footer {
             background-color: #111827;
-
             color: white;
-
             padding: 30px 0;
-
             text-align: center;
         }
 
         .social-icons a {
             color: white;
-
             font-size: 25px;
-
             margin: 0 10px;
-
             transition: 0.3s;
         }
 
@@ -451,13 +369,10 @@
             color: #0d6efd;
         }
 
-
         /* =========================
            RESPONSIVE
         ========================= */
-
         @media (max-width: 768px) {
-
             .hero-content {
                 text-align: center;
             }
@@ -477,1242 +392,412 @@
             .profile-circle {
                 width: 180px;
                 height: 232px;
-
                 margin-top: 40px;
+            }
+
+            .project-header {
+                min-height: auto;
             }
 
             section {
                 padding: 60px 0;
             }
-
         }
-
     </style>
-
 </head>
-
 
 <body>
 
-
-<!-- =========================
-     NAVBAR
-========================= -->
-
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-
     <div class="container">
-
-        <a class="navbar-brand" href="#home">
-            Sree Vardhan
-        </a>
-
-
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-        >
-
+        <a class="navbar-brand" href="#home">Sree Vardhan</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
-
         </button>
-
-
         <div class="collapse navbar-collapse" id="navbarNav">
-
             <ul class="navbar-nav ms-auto">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">
-                        Home
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">
-                        About
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">
-                        Skills
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#experience">
-                        Experience
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">
-                        Projects
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#education">
-                        Education
-                    </a>
-                </li>
-
-                <!-- CERTIFICATION ADDED -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#certification">
-                        Certification
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">
-                        Contact
-                    </a>
-                </li>
-
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#certification">Certification</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
-
         </div>
-
     </div>
-
 </nav>
 
-
-
-<!-- =========================
-     HOME
-========================= -->
-
+<!-- HOME -->
 <section id="home">
-
     <div class="container">
-
         <div class="row align-items-center">
-
-
-            <!-- HERO CONTENT -->
-
             <div class="col-lg-8">
-
                 <div class="hero-content">
-
-                    <p class="mb-2">
-                        Hello, I'm
-                    </p>
-
-
-                    <h1>
-                        Sree Vardhan Sai Kurra
-                    </h1>
-
-
-                    <h2>
-                        Python Full Stack Developer
-                    </h2>
-
-
+                    <p class="mb-2">Hello, I'm</p>
+                    <h1>Sree Vardhan Sai Kurra</h1>
+                    <h2>Python Full Stack Developer</h2>
                     <p>
-
-                        Aspiring Python Developer with experience in
-                        Python, Flask, Django, SQL, HTML, CSS and
-                        JavaScript. Passionate about developing web
-                        applications and solving real-world problems
+                        Aspiring Python Developer with experience in Python, Flask, Django, SQL, HTML, CSS and
+                        JavaScript. Passionate about developing web applications and solving real-world problems
                         through technology.
-
                     </p>
-
-
                     <div class="hero-buttons">
-
-                        <a
-                            href="#projects"
-                            class="btn btn-primary"
-                        >
-
-                            <i class="bi bi-code-slash"></i>
-
-                            View Projects
-
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="bi bi-code-slash"></i> View Projects
                         </a>
-
-
-                        <a
-                            href="#contact"
-                            class="btn btn-outline-light"
-                        >
-
-                            <i class="bi bi-envelope"></i>
-
-                            Contact Me
-
+                        <a href="#contact" class="btn btn-outline-light">
+                            <i class="bi bi-envelope"></i> Contact Me
                         </a>
-
                     </div>
-
                 </div>
-
             </div>
-
-
-
-            <!-- PROFILE PHOTO -->
-
             <div class="col-lg-4">
-
                 <div class="profile-circle">
-
-                    <img
-                        src="./sreevardhannew.JPG"
-                        alt="Sree Vardhan Sai Kurra"
-                    >
-
+                    <img src="./sreevardhannew.JPG" alt="Sree Vardhan Sai Kurra">
                 </div>
-
             </div>
-
-
         </div>
-
     </div>
-
 </section>
 
-
-
-<!-- =========================
-     ABOUT
-========================= -->
-
+<!-- ABOUT -->
 <section id="about">
-
     <div class="container">
-
         <div class="section-title">
-
-            <h2>
-                About Me
-            </h2>
-
-            <p>
-                Get to know me
-            </p>
-
+            <h2>About Me</h2>
+            <p>Get to know me</p>
         </div>
-
-
         <div class="row justify-content-center">
-
             <div class="col-lg-9">
-
                 <div class="about-card">
-
                     <p>
-
-                        I am a Computer Science and Engineering graduate
-                        from KL University with a strong interest in
+                        I am a Computer Science and Engineering graduate from KL University with a strong interest in
                         Python development and web application development.
-
                     </p>
-
-
                     <p>
-
-                        I have worked with technologies such as Python,
-                        Django, Flask, MySQL, HTML, CSS, JavaScript and Git.
-                        I enjoy building practical applications and
-                        continuously improving my technical skills.
-
+                        I have worked with technologies such as Python, Django, Flask, MySQL, HTML, CSS, JavaScript and Git.
+                        I enjoy building practical applications and continuously improving my technical skills.
                     </p>
-
-
                     <div class="about-info">
-
                         <div class="row">
-
                             <div class="col-md-6">
-
-                                <p>
-
-                                    <i class="bi bi-person-fill"></i>
-
-                                    <strong>Name:</strong>
-
-                                    Sree Vardhan Sai Kurra
-
-                                </p>
-
-
-                                <p>
-
-                                    <i class="bi bi-geo-alt-fill"></i>
-
-                                    <strong>Location:</strong>
-
-                                    Vijayawada, India
-
-                                </p>
-
+                                <p><i class="bi bi-person-fill"></i> <strong>Name:</strong> Sree Vardhan Sai Kurra</p>
+                                <p><i class="bi bi-geo-alt-fill"></i> <strong>Location:</strong> Vijayawada, India</p>
                             </div>
-
-
                             <div class="col-md-6">
-
-                                <p>
-
-                                    <i class="bi bi-mortarboard-fill"></i>
-
-                                    <strong>Degree:</strong>
-
-                                    B.Tech CSE
-
-                                </p>
-
-
-                                <p>
-
-                                    <i class="bi bi-star-fill"></i>
-
-                                    <strong>CGPA:</strong>
-
-                                    9.31 / 10.00
-
-                                </p>
-
+                                <p><i class="bi bi-mortarboard-fill"></i> <strong>Degree:</strong> B.Tech CSE</p>
+                                <p><i class="bi bi-star-fill"></i> <strong>CGPA:</strong> 9.31 / 10.00</p>
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
 </section>
 
-
-
-<!-- =========================
-     SKILLS
-========================= -->
-
+<!-- SKILLS -->
 <section id="skills">
-
     <div class="container">
-
         <div class="section-title">
-
-            <h2>
-                My Skills
-            </h2>
-
-            <p>
-                Technologies I work with
-            </p>
-
+            <h2>My Skills</h2>
+            <p>Technologies I work with</p>
         </div>
-
-
         <div class="row g-4">
-
-
-            <!-- PROGRAMMING -->
-
             <div class="col-lg-4 col-md-6">
-
                 <div class="skill-card">
-
                     <i class="bi bi-code-square"></i>
-
-                    <h4>
-                        Programming
-                    </h4>
-
-                    <span class="skill-badge">
-                        Python
-                    </span>
-
-                    <span class="skill-badge">
-                        SQL
-                    </span>
-
-                    <span class="skill-badge">
-                        JavaScript
-                    </span>
-
+                    <h4>Programming</h4>
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">SQL</span>
+                    <span class="skill-badge">JavaScript</span>
                 </div>
-
             </div>
-
-
-
-            <!-- WEB DEVELOPMENT -->
-
             <div class="col-lg-4 col-md-6">
-
                 <div class="skill-card">
-
                     <i class="bi bi-globe"></i>
-
-                    <h4>
-                        Web Development
-                    </h4>
-
-                    <span class="skill-badge">
-                        HTML
-                    </span>
-
-                    <span class="skill-badge">
-                        CSS
-                    </span>
-
-                    <span class="skill-badge">
-                        JavaScript
-                    </span>
-
-                    <span class="skill-badge">
-                        Bootstrap
-                    </span>
-
+                    <h4>Web Development</h4>
+                    <span class="skill-badge">HTML</span>
+                    <span class="skill-badge">CSS</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">Bootstrap</span>
                 </div>
-
             </div>
-
-
-
-            <!-- BACKEND -->
-
             <div class="col-lg-4 col-md-6">
-
                 <div class="skill-card">
-
                     <i class="bi bi-server"></i>
-
-                    <h4>
-                        Backend
-                    </h4>
-
-                    <span class="skill-badge">
-                        Django
-                    </span>
-
-                    <span class="skill-badge">
-                        Flask
-                    </span>
-
+                    <h4>Backend</h4>
+                    <span class="skill-badge">Django</span>
+                    <span class="skill-badge">Flask</span>
                 </div>
-
             </div>
-
-
-
-            <!-- DATABASE -->
-
             <div class="col-lg-4 col-md-6">
-
                 <div class="skill-card">
-
                     <i class="bi bi-database"></i>
-
-                    <h4>
-                        Database
-                    </h4>
-
-                    <span class="skill-badge">
-                        MySQL
-                    </span>
-
-                    <span class="skill-badge">
-                        SQL
-                    </span>
-
+                    <h4>Database</h4>
+                    <span class="skill-badge">MySQL</span>
+                    <span class="skill-badge">SQL</span>
                 </div>
-
             </div>
-
-
-
-            <!-- TOOLS -->
-
             <div class="col-lg-4 col-md-6">
-
                 <div class="skill-card">
-
                     <i class="bi bi-tools"></i>
-
-                    <h4>
-                        Tools
-                    </h4>
-
-                    <span class="skill-badge">
-                        Git
-                    </span>
-
-                    <span class="skill-badge">
-                        GitHub
-                    </span>
-
+                    <h4>Tools</h4>
+                    <span class="skill-badge">Git</span>
+                    <span class="skill-badge">GitHub</span>
                 </div>
-
             </div>
-
-
-
-            <!-- CLOUD -->
-
             <div class="col-lg-4 col-md-6">
-
                 <div class="skill-card">
-
                     <i class="bi bi-cloud"></i>
-
-                    <h4>
-                        Cloud
-                    </h4>
-
-                    <span class="skill-badge">
-                        AWS
-                    </span>
-
+                    <h4>Cloud</h4>
+                    <span class="skill-badge">AWS</span>
                 </div>
-
             </div>
-
-
         </div>
-
     </div>
-
 </section>
 
-
-
-<!-- =========================
-     EXPERIENCE
-========================= -->
-
+<!-- EXPERIENCE -->
 <section id="experience">
-
     <div class="container">
-
         <div class="section-title">
-
-            <h2>
-                Experience
-            </h2>
-
-            <p>
-                My professional experience
-            </p>
-
+            <h2>Experience</h2>
+            <p>My professional experience</p>
         </div>
-
-
         <div class="row justify-content-center">
-
             <div class="col-lg-9">
-
                 <div class="experience-card">
-
-                    <h4>
-                        Python Full Stack Trainee
-                    </h4>
-
-
-                    <h5 class="mt-2">
-                        Codegnan IT Solutions
-                    </h5>
-
-
-                    <p class="experience-date">
-
-                        May 2026 – Present
-
-                    </p>
-
-
+                    <h4>Python Full Stack Trainee</h4>
+                    <h5 class="mt-2">Codegnan IT Solutions</h5>
+                    <p class="experience-date">May 2026 – Present</p>
                     <p>
-
-                        Developing practical knowledge in Python Full Stack
-                        Development with a focus on Python, Flask, Django,
-                        HTML, CSS, JavaScript, ReactJS, databases and
-                        web application development.
-
+                        Developing practical knowledge in Python Full Stack Development with a focus on Python, Flask,
+                        Django, HTML, CSS, JavaScript, ReactJS, databases and web application development.
                     </p>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
 </section>
 
-
-
-<!-- =========================
-     PROJECTS
-========================= -->
-
+<!-- PROJECTS -->
 <section id="projects">
-
     <div class="container">
-
         <div class="section-title">
-
-            <h2>
-                Projects
-            </h2>
-
-            <p>
-                Some of my recent work
-            </p>
-
+            <h2>Projects</h2>
+            <p>Some of my recent work</p>
         </div>
-
-
         <div class="row g-4">
-
-
             <!-- PROJECT 1 -->
-
             <div class="col-lg-6">
-
                 <div class="project-card">
-
-
                     <div class="project-header">
-
                         <i class="bi bi-flower1"></i>
-
-
-                        <h3 class="mt-3">
-
-                            Agriculture Products Rural
-                            Entrepreneurship Management System
-
-                        </h3>
-
+                        <h3>Agriculture Products Rural Entrepreneurship Management System</h3>
                     </div>
-
-
                     <div class="project-body">
-
-                        <h4>
-                            Project Overview
-                        </h4>
-
-
+                        <h4>Project Overview</h4>
                         <p>
-
-                            A web-based application designed to connect
-                            farmers and rural entrepreneurs with customers.
-                            The system supports product listing,
-                            user authentication, product management and
-                            order processing.
-
+                            A web-based application designed to connect farmers and rural entrepreneurs with customers.
+                            The system supports product listing, user authentication, product management and order
+                            processing.
                         </p>
-
-
-                        <h6 class="mt-4">
-                            Technologies
-                        </h6>
-
-
-                        <span class="technology">
-                            Python
-                        </span>
-
-                        <span class="technology">
-                            Django
-                        </span>
-
-                        <span class="technology">
-                            HTML
-                        </span>
-
-                        <span class="technology">
-                            CSS
-                        </span>
-
-                        <span class="technology">
-                            JavaScript
-                        </span>
-
-                        <span class="technology">
-                            MySQL
-                        </span>
-
-
-                        <!-- GITHUB BUTTON -->
-
-                        <div class="github-btn">
-
-                            <a
-                                href="https://github.com/SreeVardhanKurra/Efarmingportal"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="btn btn-dark"
-                            >
-
-                                <i class="bi bi-github"></i>
-
-                                View on GitHub
-
-                            </a>
-
+                        <h6 class="mt-4">Technologies</h6>
+                        <div>
+                            <span class="technology">Python</span>
+                            <span class="technology">Django</span>
+                            <span class="technology">HTML</span>
+                            <span class="technology">CSS</span>
+                            <span class="technology">JavaScript</span>
+                            <span class="technology">MySQL</span>
                         </div>
-
+                        <div class="github-btn">
+                            <a href="https://github.com/SreeVardhanKurra/Efarmingportal" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-dark">
+                                <i class="bi bi-github"></i> View on GitHub
+                            </a>
+                        </div>
                     </div>
-
                 </div>
-
             </div>
-
-
 
             <!-- PROJECT 2 -->
-
             <div class="col-lg-6">
-
                 <div class="project-card">
-
-
                     <div class="project-header">
-
                         <i class="bi bi-mic-fill"></i>
-
-
-                        <h3 class="mt-3">
-
-                            Python Voice-Based
-                            Virtual Assistant
-
-                        </h3>
-
+                        <h3>Python Voice-Based Virtual Assistant</h3>
                     </div>
-
-
                     <div class="project-body">
-
-                        <h4>
-                            Project Overview
-                        </h4>
-
-
+                        <h4>Project Overview</h4>
                         <p>
-
-                            A Python-based voice assistant that accepts
-                            voice commands from users and performs
-                            different tasks such as opening websites,
-                            searching the web, speaking responses and
-                            sending emails. The project uses speech
-                            recognition and text-to-speech technologies
-                            to provide an interactive voice-based
-                            experience.
-
+                            A Python-based voice assistant that accepts voice commands from users and performs different
+                            tasks such as opening websites, searching the web, speaking responses and sending emails.
+                            The project uses speech recognition and text-to-speech technologies to provide an interactive
+                            voice-based experience.
                         </p>
-
-
-                        <h6 class="mt-4">
-                            Technologies
-                        </h6>
-
-
-                        <span class="technology">
-                            Python
-                        </span>
-
-                        <span class="technology">
-                            SpeechRecognition
-                        </span>
-
-                        <span class="technology">
-                            gTTS
-                        </span>
-
-                        <span class="technology">
-                            PyAudio
-                        </span>
-
-                        <span class="technology">
-                            playsound
-                        </span>
-
-                        <span class="technology">
-                            smtplib
-                        </span>
-
-                        <span class="technology">
-                            webbrowser
-                        </span>
-
-
-                        <!-- GITHUB BUTTON -->
-
+                        <h6 class="mt-4">Technologies</h6>
+                        <div>
+                            <span class="technology">Python</span>
+                            <span class="technology">SpeechRecognition</span>
+                            <span class="technology">gTTS</span>
+                            <span class="technology">PyAudio</span>
+                            <span class="technology">playsound</span>
+                            <span class="technology">smtplib</span>
+                            <span class="technology">webbrowser</span>
+                        </div>
                         <div class="github-btn">
-
-                            <a
-                                href="https://github.com/SreeVardhanKurra/voice-based-virtual-assistant"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="btn btn-dark"
-                            >
-
-                                <i class="bi bi-github"></i>
-
-                                View on GitHub
-
+                            <a href="https://github.com/SreeVardhanKurra/voice-based-virtual-assistant" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-dark">
+                                <i class="bi bi-github"></i> View on GitHub
                             </a>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
-
         </div>
-
     </div>
-
 </section>
 
-
-
-<!-- =========================
-     EDUCATION
-========================= -->
-
+<!-- EDUCATION -->
 <section id="education">
-
     <div class="container">
-
         <div class="section-title">
-
-            <h2>
-                Education
-            </h2>
-
-            <p>
-                My academic background
-            </p>
-
+            <h2>Education</h2>
+            <p>My academic background</p>
         </div>
-
-
         <div class="row justify-content-center">
-
             <div class="col-lg-9">
-
                 <div class="education-card">
-
                     <div class="row align-items-center">
-
-
                         <div class="col-md-2 text-center">
-
-                            <i
-                                class="bi bi-mortarboard-fill"
-                                style="
-                                font-size:60px;
-                                color:#0d6efd;
-                                "
-                            ></i>
-
+                            <i class="bi bi-mortarboard-fill" style="font-size:60px; color:#0d6efd;"></i>
                         </div>
-
-
                         <div class="col-md-10">
-
-                            <h4>
-                                Bachelor of Technology
-                            </h4>
-
-
-                            <h5>
-                                Computer Science and Engineering
-                            </h5>
-
-
-                            <p class="mb-1">
-                                KL University, Guntur
-                            </p>
-
-
-                            <p class="text-primary fw-bold">
-
-                                2022 – 2026
-
-                            </p>
-
-
-                            <p>
-
-                                <strong>CGPA:</strong>
-
-                                9.31 / 10.00
-
-                            </p>
-
+                            <h4>Bachelor of Technology</h4>
+                            <h5>Computer Science and Engineering</h5>
+                            <p class="mb-1">KL University, Guntur</p>
+                            <p class="text-primary fw-bold">2022 – 2026</p>
+                            <p><strong>CGPA:</strong> 9.31 / 10.00</p>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
 </section>
 
-
-
-<!-- =========================
-     CERTIFICATION
-========================= -->
-
+<!-- CERTIFICATION -->
 <section id="certification">
-
     <div class="container">
-
         <div class="section-title">
-
-            <h2>
-                Certification
-            </h2>
-
-            <p>
-                Professional certification
-            </p>
-
+            <h2>Certification</h2>
+            <p>Professional certification</p>
         </div>
-
-
         <div class="row justify-content-center">
-
             <div class="col-lg-6">
-
                 <div class="certificate-card">
-
                     <i class="bi bi-award-fill"></i>
-
-
-                    <h4>
-                        AWS Certified Cloud Practitioner
-                    </h4>
-
-
-                    <p class="text-muted mt-3">
-                        Amazon Web Services
-                    </p>
-
-
-                    <!-- CREDLY CERTIFICATE -->
-
-                    <a
-                        href="https://www.credly.com/badges/3f717781-b209-4624-9f06-1cb0671c03cc/public_url"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn btn-primary mt-2"
-                    >
-
-                        <i class="bi bi-patch-check-fill"></i>
-
-                        View Certificate
-
+                    <h4>AWS Certified Cloud Practitioner</h4>
+                    <p class="text-muted mt-3">Amazon Web Services</p>
+                    <a href="https://www.credly.com/badges/3f717781-b209-4624-9f06-1cb0671c03cc/public_url"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-2">
+                        <i class="bi bi-patch-check-fill"></i> View Certificate
                     </a>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
 </section>
 
-
-
-<!-- =========================
-     CONTACT
-========================= -->
-
+<!-- CONTACT -->
 <section id="contact">
-
     <div class="container">
-
         <div class="section-title">
-
-            <h2>
-                Contact Me
-            </h2>
-
-            <p>
-                Let's connect
-            </p>
-
+            <h2>Contact Me</h2>
+            <p>Let's connect</p>
         </div>
-
-
         <div class="row justify-content-center">
-
             <div class="col-lg-8">
-
                 <div class="contact-card">
-
-
-                    <!-- EMAIL -->
-
                     <div class="contact-item">
-
                         <i class="bi bi-envelope-fill"></i>
-
-
                         <div>
-
-                            <h6>
-                                Email
-                            </h6>
-
-
-                            <a
-                                href="mailto:sreevardhankurra@gmail.com"
-                            >
-
-                                sreevardhankurra@gmail.com
-
-                            </a>
-
+                            <h6>Email</h6>
+                            <a href="mailto:sreevardhankurra@gmail.com">sreevardhankurra@gmail.com</a>
                         </div>
-
                     </div>
-
-
-
-                    <!-- LINKEDIN -->
-
                     <div class="contact-item">
-
                         <i class="bi bi-linkedin"></i>
-
-
                         <div>
-
-                            <h6>
-                                LinkedIn
-                            </h6>
-
-
-                            <a
-                                href="https://www.linkedin.com/in/sreevardhansaikurra/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-
-                                linkedin.com/in/sreevardhansaikurra
-
-                            </a>
-
+                            <h6>LinkedIn</h6>
+                            <a href="https://www.linkedin.com/in/sreevardhansaikurra/" target="_blank"
+                                rel="noopener noreferrer">linkedin.com/in/sreevardhansaikurra</a>
                         </div>
-
                     </div>
-
-
-
-                    <!-- GITHUB -->
-
                     <div class="contact-item">
-
                         <i class="bi bi-github"></i>
-
-
                         <div>
-
-                            <h6>
-                                GitHub
-                            </h6>
-
-
-                            <a
-                                href="https://github.com/SreeVardhanKurra"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-
-                                github.com/SreeVardhanKurra
-
-                            </a>
-
+                            <h6>GitHub</h6>
+                            <a href="https://github.com/SreeVardhanKurra" target="_blank"
+                                rel="noopener noreferrer">github.com/SreeVardhanKurra</a>
                         </div>
-
                     </div>
-
-
-
-                    <!-- LOCATION -->
-
                     <div class="contact-item">
-
                         <i class="bi bi-geo-alt-fill"></i>
-
-
                         <div>
-
-                            <h6>
-                                Location
-                            </h6>
-
-
-                            <p class="mb-0">
-                                Vijayawada, India
-                            </p>
-
+                            <h6>Location</h6>
+                            <p class="mb-0">Vijayawada, India</p>
                         </div>
-
                     </div>
-
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
 </section>
 
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
+<!-- FOOTER -->
 <footer>
-
     <div class="container">
-
-
         <div class="social-icons mb-3">
-
-
-            <a
-                href="https://github.com/SreeVardhanKurra"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-
+            <a href="https://github.com/SreeVardhanKurra" target="_blank" rel="noopener noreferrer">
                 <i class="bi bi-github"></i>
-
             </a>
-
-
-            <a
-                href="https://www.linkedin.com/in/sreevardhansaikurra/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-
+            <a href="https://www.linkedin.com/in/sreevardhansaikurra/" target="_blank" rel="noopener noreferrer">
                 <i class="bi bi-linkedin"></i>
-
             </a>
-
-
-            <a
-                href="mailto:sreevardhankurra@gmail.com"
-            >
-
+            <a href="mailto:sreevardhankurra@gmail.com">
                 <i class="bi bi-envelope-fill"></i>
-
             </a>
-
         </div>
-
-
         <p class="mb-0">
-
-            ©
-
-            <span id="year"></span>
-
-            Sree Vardhan Sai Kurra.
-
-            All Rights Reserved.
-
+            © <span id="year"></span> Sree Vardhan Sai Kurra. All Rights Reserved.
         </p>
-
     </div>
-
 </footer>
 
-
-
-<!-- =========================
-     BOOTSTRAP JS
-========================= -->
-
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
-
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Current year
-
-    document.getElementById("year").textContent =
-        new Date().getFullYear();
-
-
-    // Close mobile navbar after clicking a link
-
-    document
-        .querySelectorAll(".navbar-nav .nav-link")
-        .forEach(function(link) {
-
-            link.addEventListener("click", function() {
-
-                const navbar =
-                    document.querySelector(".navbar-collapse");
-
-                if (navbar.classList.contains("show")) {
-
-                    const bsCollapse =
-                        bootstrap.Collapse
-                        .getInstance(navbar);
-
-                    if (bsCollapse) {
-
-                        bsCollapse.hide();
-
-                    }
-
+    document.querySelectorAll(".navbar-nav .nav-link").forEach(function(link) {
+        link.addEventListener("click", function() {
+            const navbar = document.querySelector(".navbar-collapse");
+            if (navbar.classList.contains("show")) {
+                const bsCollapse = bootstrap.Collapse.getInstance(navbar);
+                if (bsCollapse) {
+                    bsCollapse.hide();
                 }
-
-            });
-
+            }
         });
-
+    });
 </script>
 
-
 </body>
-
 </html>
